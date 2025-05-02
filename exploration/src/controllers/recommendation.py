@@ -1,4 +1,5 @@
 from src.models.database import get_songs_by_criteria
+from src.controllers.feedback import get_avg_rating
 import random
 
 def get_recommendation(mood, tempo):
@@ -15,7 +16,16 @@ def get_recommendation(mood, tempo):
 				matching_songs = get_songs_by_criteria()
 	
 	if matching_songs:
-		return random.choice(matching_songs)
+		if len(matching_songs) > 1:
+			for song in matching_songs:
+				song['rating'] = get_avg_rating(song['id'])
+			
+			matching_songs.sort(key=lambda x: x['rating'], reverse=True)
+
+			top_count = min(3, len(matching_songs))
+			return random.choice(matching_songs[:top_count])
+		else:
+			return matching_songs[0]
 	else:
 		return None
 

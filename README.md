@@ -31,11 +31,11 @@ Als Nächstes habe ich einen Test implementiert, um diese Funktion zu validieren
 
 Ausgehend von Ihren Erfahrungen vom 25.4, welche *features* brauchen noch mehr Recherche? (Sie können auch mehrere AP für ein *feature* aufwenden.)
 
-- [ ] Einen Layout für kommende GUI erstellen (📵)
-- [ ] Erweiterung des Datenbankenschemas: Hinzufügen von zusätzlichen Attributen für Songs (z. B. Popularität, Sprache, usw...)
-- [ ] Implementierung einer Feedback-Funktion
+- [x] Einen Layout für kommende GUI erstellen (📵)
+- [x] Erweiterung des Datenbankenschemas: Hinzufügen von zusätzlichen Attributen für Songs (z. B. Popularität, Sprache, usw...)
+- [x] Implementierung einer Feedback-Funktion
 
-✍️ Heute habe ich... (50-100 Wörter)
+Als erstes habe ich heute die Datenbank erweitert, indem ich einige zusätzliche Lieder hinzugefügt habe (mit Hilfe von KI) und die Anzahl der Attribute erweitert habe, indem ich das Entstehungsjahr des Liedes, den Gesangs-/Instrumental-Typ, wenn der Gesangs-Typ dann in welcher Sprache, und auch eine Beliebtheitsskala hinzugefügt habe. Die nächste Aufgabe war die Implementierung der Bewertungs- und Feedbackfunktion im Allgemeinen - ich implementierte das Speichern der Bewertung und bearbeitete auch das Empfehlungssystem, so dass die Lieder mit der höchsten Bewertung mit größerer Wahrscheinlichkeit weitergegeben wurden. Das letzte, was ich implementiert habe, war ein Layout der Benutzeroberfläche auf Papier, aber ich denke immer noch über ein vollwertiges Layout nach. Im Moment habe ich nur eine grundlegende GUI implementiert, ohne mich auf meine eigene Arbeit zu konzentrieren.
 
 ☝️ Vergessen Sie nicht, den Code von heute auf github hochzuladen.
 
@@ -43,15 +43,26 @@ Ausgehend von Ihren Erfahrungen vom 25.4, welche *features* brauchen noch mehr R
 
 Planen Sie nun Ihr Projekt, sodass die *Kern-Funktionalität* in 3 Sitzungen realisiert ist. Schreiben Sie dazu zunächst 3 solche übergeordneten Kern-Funktionalitäten auf: 
 
-1. Kern-Funktionalität
-2. Kern-Funktionalität
-3. Kern-Funktionalität
+1. Erweiterte Datenbankstruktur und Datensammlung
+2. Verbesserter Empfehlungsalgorithmus mit Machine Learning
+3. Komplette GUI mit erweiteren Funktionen
 
 Diese Kern-Funktionalitäten brechen Sie nun in etwa 4 AP je herunter. Versuchen Sie jetzt bereits, auch die Sitzung vom 16.5 und 23.5 zu planen (im Wissen, dass Sie kleine Anpassungen an Ihrer Planung vornehmen können).
 
-- [ ] ...
-- [ ] ...
-- [ ] ...
+### 1. Erweiterte Datenbankstruktur und Datensammlung (für heute):
+- [ ] Umfangreiches Datenbankschema erstellen (mit detaillierten Attributen wie BPM, Subgenres, usw.)
+- [ ] Recherche und Sammlung von Daten zu experimenteller elektronischer Musik
+
+### 2. Verbesserter Empfehlungsalgorithmus mit Machine Learning (16.5):
+- [ ] Grundlegende Datenanalyse führen und Muster identifizieren
+- [ ] Einfaches Machine Learning-Modell implementieren
+- [ ] Modell mit vorhandenen Feedback-Daten trainieren
+- [ ] Optimierung des Modells
+
+### 3. Komplette GUI mit erweiterten Funktionen (23.5):
+- [ ] Detaillierte Benutzeroberfläche mit CustomTkinter entwerfen
+- [ ] Darstellung von Zusatzinformationen zu Genres / Subgenres
+- [ ] SoundCloud API implementieren, um einen bestimmten Track schön anzuzeigen (manchmal sind Tracknamen völlig unverständlich)
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
@@ -59,10 +70,11 @@ Diese Kern-Funktionalitäten brechen Sie nun in etwa 4 AP je herunter. Versuchen
 
 ## 16.5
 
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+### 2. Verbesserter Empfehlungsalgorithmus mit Machine Learning:
+- [ ] Grundlegende Datenanalyse führen und Muster identifizieren
+- [ ] Einfaches Machine Learning-Modell implementieren
+- [ ] Modell mit vorhandenen Feedback-Daten trainieren
+- [ ] Optimierung des Modells
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
