@@ -50,7 +50,7 @@ Planen Sie nun Ihr Projekt, sodass die *Kern-Funktionalität* in 3 Sitzungen rea
 Diese Kern-Funktionalitäten brechen Sie nun in etwa 4 AP je herunter. Versuchen Sie jetzt bereits, auch die Sitzung vom 16.5 und 23.5 zu planen (im Wissen, dass Sie kleine Anpassungen an Ihrer Planung vornehmen können).
 
 ### 1. Erweiterte Datenbankstruktur und Datensammlung (für heute):
-- [ ] Umfangreiches Datenbankschema erstellen (mit detaillierten Attributen wie BPM, Subgenres, usw.)
+- [x] Umfangreiches Datenbankschema erstellen (mit detaillierten Attributen wie BPM, Subgenres, usw.)
 - [ ] Recherche und Sammlung von Daten zu experimenteller elektronischer Musik
 
 ### 2. Verbesserter Empfehlungsalgorithmus mit Machine Learning (16.5):
@@ -64,7 +64,7 @@ Diese Kern-Funktionalitäten brechen Sie nun in etwa 4 AP je herunter. Versuchen
 - [ ] Darstellung von Zusatzinformationen zu Genres / Subgenres
 - [ ] SoundCloud API implementieren, um einen bestimmten Track schön anzuzeigen (manchmal sind Tracknamen völlig unverständlich)
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute hatte ich viel zu tun, weil ich einen kleinen Datensatz mit Tracks aus experimentellen Genres zusammenstellen wollte. Zunächst habe ich Attribute definiert und dann mit der Suche und dem Sammeln von Informationen begonnen, aber am Ende bin ich gescheitert - ich werde nicht genug Zeit haben, um genügend Tracks zu sammeln, um das Modell zu trainieren, und die Sammlung selbst ist sehr kompliziert, selbst wenn man die Soundcloud-API verwendet. Daher entschied ich mich, einen ziemlich grossen vorgefertigten und kostenlosen Datensatz zu nehmen - FMA und anschliessend „schneiden“ aus ihnen ausschliesslich experimentelle, plus passen sie auf meine Bedürfnisse, dh Attribute. Ich beschloss auch, auf NoSQL-Datenbanken umzusteigen, da es sich als einfacher erwies, mit ihnen zu arbeiten (wir haben gerade das Modul zu NoSQL gestartet). 
 
 ☝️  Vergessen Sie nicht, den Code von heute auf github hochzuladen.
 
