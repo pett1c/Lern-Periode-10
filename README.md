@@ -50,33 +50,33 @@ Planen Sie nun Ihr Projekt, sodass die *Kern-Funktionalität* in 3 Sitzungen rea
 Diese Kern-Funktionalitäten brechen Sie nun in etwa 4 AP je herunter. Versuchen Sie jetzt bereits, auch die Sitzung vom 16.5 und 23.5 zu planen (im Wissen, dass Sie kleine Anpassungen an Ihrer Planung vornehmen können).
 
 ### 1. Erweiterte Datenbankstruktur und Datensammlung (für heute):
-- [x] Umfangreiches Datenbankschema erstellen (mit detaillierten Attributen wie BPM, Subgenres, usw.)
-- [ ] Recherche und Sammlung von Daten zu experimenteller elektronischer Musik
+- [x] ~~Umfangreiches Datenbankschema erstellen (mit detaillierten Attributen wie BPM, Subgenres, usw.)~~
+- [x] ~~Recherche und Sammlung von Daten zu experimenteller elektronischer Musik~~
 
 ### 2. Verbesserter Empfehlungsalgorithmus mit Machine Learning (16.5):
-- [ ] Grundlegende Datenanalyse führen und Muster identifizieren
-- [ ] Einfaches Machine Learning-Modell implementieren
-- [ ] Modell mit vorhandenen Feedback-Daten trainieren
-- [ ] Optimierung des Modells
+- [x] Grundlegende Datenanalyse führen und Muster identifizieren
+- [x] Einfaches Machine Learning-Modell implementieren
+- [x] Modell mit vorhandenen Feedback-Daten trainieren
+- [x] Optimierung des Modells
 
 ### 3. Komplette GUI mit erweiterten Funktionen (23.5):
 - [ ] Detaillierte Benutzeroberfläche mit CustomTkinter entwerfen
 - [ ] Darstellung von Zusatzinformationen zu Genres / Subgenres
 - [ ] SoundCloud API implementieren, um einen bestimmten Track schön anzuzeigen (manchmal sind Tracknamen völlig unverständlich)
 
-Heute hatte ich viel zu tun, weil ich einen kleinen Datensatz mit Tracks aus experimentellen Genres zusammenstellen wollte. Zunächst habe ich Attribute definiert und dann mit der Suche und dem Sammeln von Informationen begonnen, aber am Ende bin ich gescheitert - ich werde nicht genug Zeit haben, um genügend Tracks zu sammeln, um das Modell zu trainieren, und die Sammlung selbst ist sehr kompliziert, selbst wenn man die Soundcloud-API verwendet. Daher entschied ich mich, einen ziemlich grossen vorgefertigten und kostenlosen Datensatz zu nehmen - FMA und anschliessend „schneiden“ aus ihnen ausschliesslich experimentelle, plus passen sie auf meine Bedürfnisse, dh Attribute. Ich beschloss auch, auf NoSQL-Datenbanken umzusteigen, da es sich als einfacher erwies, mit ihnen zu arbeiten (wir haben gerade das Modul zu NoSQL gestartet). 
+Heute habe ich versucht, mir einen schönen Datensatz mit experimenteller Musik zu erstellen. Zu Beginn habe ich neue Attribute abgeleitet, nach denen ich Tracks sammeln werde. Später, je mehr ich mir logische und notwendige Attribute überlegte, desto schwieriger wurde es, einen Datensatz mit genügend Informationen zu realisieren. Bei dem Versuch, wenigstens einige Titel zu sammeln, wurde mir schliesslich klar, dass dies nicht funktionieren würde, und ich beschloss, einen fertigen Datensatz mit Titeln zu finden, die bereits experimentell sind oder die ich durch Entfernen aller nicht experimentellen Titel „bearbeiten“ würde. Bei der Analyse der verfügbaren Datensätze wurde mir klar, dass entweder die von mir benötigten Attribute nicht vorhanden sind, der Datensatz aber gross genug ist, um ihn zu bearbeiten, oder dass die Attribute vorhanden sind, der Datensatz aber zu klein ist bzw. keine experimentellen Genres enthält. So entschied ich schließlich, dass die Idee, experimentelle Titel für den Datensatz zu sammeln und auf dieser Grundlage das Modell für weitere Empfehlungen zu trainieren, auf dem Papier sicherlich gut ist, aber in der Umsetzung des Problems: das Finden/Erstellen des Datensatzes selbst zum Trainieren des Modells. Ich könnte es tun, aber leider habe ich nicht viel Zeit, um das Projekt selbst zu realisieren. Also werde ich einfach einen Datensatz mit den benötigten Attributen nehmen und mit einem normalen Datensatz arbeiten.
 
 ☝️  Vergessen Sie nicht, den Code von heute auf github hochzuladen.
 
 ## 16.5
 
 ### 2. Verbesserter Empfehlungsalgorithmus mit Machine Learning:
-- [ ] Grundlegende Datenanalyse führen und Muster identifizieren
-- [ ] Einfaches Machine Learning-Modell implementieren
-- [ ] Modell mit vorhandenen Feedback-Daten trainieren
-- [ ] Optimierung des Modells
+- [x] Grundlegende Datenanalyse führen und Muster identifizieren
+- [x] Einfaches Machine Learning-Modell implementieren
+- [x] Modell mit vorhandenen Feedback-Daten trainieren
+- [x] Optimierung des Modells
 
-✍️ Heute habe ich... (50-100 Wörter)
+Als erstes habe ich heute einen [Datensatz](https://www.kaggle.com/datasets/devdope/200k-spotify-songs-light-dataset/) gefunden, der meinen Bedürfnissen entspricht, und ihn dann analysiert. Die Analyse (`csv_analysis.py`) hat gezeigt, dass es eine Menge „Müll“ in der Datenbank gibt, der entfernt werden sollte. Also habe ich `clean_db.py` geschrieben, das die notwendigen Felder von „Müll“ bereinigt (z.B. gab es bei den Genres eine riesige Menge an einfach nur seltsamen Genres oder Genres in Form von Tags (`'pop rock, rock, ...'`)). Eine zweite Analyse (`db_analysis.py`) zeigte, dass die Datenbank nun für das Modelltraining bereit war. Der nächste und letzte Schritt bestand darin, ein Modell (`recommendation.py`) zu entwickeln, das Lieder auf der Grundlage der ausgewählten Stimmung vorhersagen kann. Später werde ich dieses Modell an die von mir benötigte GUI anpassen.
 
 ☝️  Vergessen Sie nicht, den Code von heute auf github hochzuladen.
 
