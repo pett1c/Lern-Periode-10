@@ -54,15 +54,15 @@ Diese Kern-Funktionalitäten brechen Sie nun in etwa 4 AP je herunter. Versuchen
 - [x] ~~Recherche und Sammlung von Daten zu experimenteller elektronischer Musik~~
 
 ### 2. Verbesserter Empfehlungsalgorithmus mit Machine Learning (16.5):
-- [x] Grundlegende Datenanalyse führen und Muster identifizieren
-- [x] Einfaches Machine Learning-Modell implementieren
-- [x] Modell mit vorhandenen Feedback-Daten trainieren
-- [x] Optimierung des Modells
+- [x] ~~Grundlegende Datenanalyse führen und Muster identifizieren~~
+- [x] ~~Einfaches Machine Learning-Modell implementieren~~
+- [x] ~~Modell mit vorhandenen Popularität-Daten trainieren~~
+- [x] ~~Optimierung des Modells~~
 
 ### 3. Komplette GUI mit erweiterten Funktionen (23.5):
-- [ ] Detaillierte Benutzeroberfläche mit CustomTkinter entwerfen
-- [ ] Darstellung von Zusatzinformationen zu Genres / Subgenres
-- [ ] SoundCloud API implementieren, um einen bestimmten Track schön anzuzeigen (manchmal sind Tracknamen völlig unverständlich)
+- [x] ~~Detaillierte Benutzeroberfläche mit CustomTkinter entwerfen~~
+- [x] ~~Erstellen Sie die Auswirkungen von Nutzerbewertungen auf die Popularität von Titeln (Feedback)~~
+- [ ] ~~SoundCloud API implementieren, um einen bestimmten Track schön anzuzeigen (manchmal sind Tracknamen völlig unverständlich)~~
 
 Heute habe ich versucht, mir einen schönen Datensatz mit experimenteller Musik zu erstellen. Zu Beginn habe ich neue Attribute abgeleitet, nach denen ich Tracks sammeln werde. Später, je mehr ich mir logische und notwendige Attribute überlegte, desto schwieriger wurde es, einen Datensatz mit genügend Informationen zu realisieren. Bei dem Versuch, wenigstens einige Titel zu sammeln, wurde mir schliesslich klar, dass dies nicht funktionieren würde, und ich beschloss, einen fertigen Datensatz mit Titeln zu finden, die bereits experimentell sind oder die ich durch Entfernen aller nicht experimentellen Titel „bearbeiten“ würde. Bei der Analyse der verfügbaren Datensätze wurde mir klar, dass entweder die von mir benötigten Attribute nicht vorhanden sind, der Datensatz aber gross genug ist, um ihn zu bearbeiten, oder dass die Attribute vorhanden sind, der Datensatz aber zu klein ist bzw. keine experimentellen Genres enthält. So entschied ich schliesslich, dass die Idee, experimentelle Titel für den Datensatz zu sammeln und auf dieser Grundlage das Modell für weitere Empfehlungen zu trainieren, auf dem Papier sicherlich gut ist, aber in der Umsetzung des Problems: das Finden/Erstellen des Datensatzes selbst zum Trainieren des Modells. Ich könnte es tun, aber leider habe ich nicht viel Zeit, um das Projekt selbst zu realisieren. Also werde ich einfach einen Datensatz mit den benötigten Attributen nehmen und mit einem normalen Datensatz arbeiten.
 
@@ -82,12 +82,11 @@ Als erstes habe ich heute einen [Datensatz](https://www.kaggle.com/datasets/devd
 
 ## 23.5
 
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+- [x] Detaillierte Benutzeroberfläche mit CustomTkinter entwerfen
+- [x] Erstellen Sie die Auswirkungen von Nutzerbewertungen auf die Popularität von Titeln (Feedback)
+- [x] Hinzufügen der Möglichkeit, den Titel zu kopieren
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute war ein schwieriger, aber produktiver Tag. Als erstes habe ich ein Mockup auf der Grundlage meiner Zeichnung (siehe `2.5`) erstellt, um die Schnittstelle mit `CustomTkinter` grob nachzubilden. Als nächstes habe ich mir Gedanken über eine angemessene Feedback-Funktion gemacht, und für mich war die beste Option, den bereits vorhandenen Popularitätswert jedes Tracks mit Sternen zu beeinflussen. So nimmt 1 Stern 2 vom Beliebtheitswert weg, 2 Sterne nehmen 1 vom Beliebtheitswert weg, 3 Sterne nehmen nicht weg, fügen aber auch nicht hinzu, 4 Sterne fügen 1 zum Beliebtheitswert hinzu, 5 Sterne fügen 2 zum Beliebtheitswert hinzu. Ausserdem dachte ich darüber nach, die Funktion des Kopierens von Titeln bei Klick zu implementieren (unter Verwendung der `pyperclip`-Bibliothek), da dies sehr praktisch wäre. Danach habe ich begonnen, alle oben genannten Punkte zu implementieren. Letztendlich konnte ich das meiste davon erfolgreich umsetzen, aber am Ende war das Programm extrem langsam und unoptimiert, was nicht in erster Linie an der fehlenden Architektur lag. Ich werde das Programm optimieren, eine richtige Architektur erstellen, einige kleinere Fehler beheben und all das in `6.6`.
 
 ☝️  Vergessen Sie nicht, den Code von heute auf github hochzuladen.
 
@@ -95,10 +94,10 @@ Als erstes habe ich heute einen [Datensatz](https://www.kaggle.com/datasets/devd
 
 Ihr Projekt sollte nun alle Funktionalität haben, dass man es benutzen kann. Allerdings gibt es sicher noch Teile, welche "schöner" werden können: Layout, Code, Architektur... beschreiben Sie kurz den Stand Ihres Projekts, und leiten Sie daraus 6 solche "kosmetischen" AP für den 6.6 und den 13.6 ab.
 
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+- [ ] Optimierung
+- [ ] Schaffung einer angemessenen Architektur
+- [ ] Fehlerkorrekturen
+- [ ] Verbesserungen der Benutzeroberfläche
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
