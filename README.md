@@ -94,19 +94,21 @@ Heute war ein schwieriger, aber produktiver Tag. Als erstes habe ich ein Mockup 
 
 Ihr Projekt sollte nun alle Funktionalität haben, dass man es benutzen kann. Allerdings gibt es sicher noch Teile, welche "schöner" werden können: Layout, Code, Architektur... beschreiben Sie kurz den Stand Ihres Projekts, und leiten Sie daraus 6 solche "kosmetischen" AP für den 6.6 und den 13.6 ab.
 
-- [ ] Optimierung
+- [x] Optimierung
 - [ ] Schaffung einer angemessenen Architektur
-- [ ] Fehlerkorrekturen
+- [x] Fehlerkorrekturen
 - [ ] Verbesserungen der Benutzeroberfläche
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute habe ich das Projekt fast komplett überarbeitet. Ich habe es überarbeitet, weil mir klar geworden ist, dass ich in diesem Projekt überhaupt kein Lernmodell brauche und nur die Datenbank nutzen kann, in der bereits die für mich notwendigen Informationen enthalten sind. Als Erstes habe ich den Algorithmus überarbeitet: Jetzt gibt er völlig zufällig Empfehlungen aus, orientiert sich dabei aber an einem neuen Attribut – der Bewertung durch den Nutzer. Jetzt kann der Nutzer jeden einzelnen Track bewerten, und der Algorithmus priorisiert genau diese Tracks und verwirft diejenigen, die negativ bewertet wurden. Außerdem habe ich die meiste Zeit damit verbracht, mich mit Tkinter und dessen Verwendung vertraut zu machen. Ich habe mich noch nicht vollständig damit auseinandergesetzt und werde mich in der nächsten Sitzung der Verbesserung der GUI widmen.
+
+Übersetzt mit DeepL.com (kostenlose Version)
 
 ☝️  Vergessen Sie nicht, den Code von heute auf github hochzuladen.
 
 ## 13.6
 
-- [ ] ...
-- [ ] ...
+- [ ] Verbesserungen der Benutzeroberfläche
+- [ ] Schaffung einer angemessenen Architektur
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
