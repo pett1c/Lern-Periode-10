@@ -107,10 +107,10 @@ Heute habe ich das Projekt fast komplett überarbeitet. Ich habe es überarbeite
 
 ## 13.6
 
-- [ ] Verbesserungen der Benutzeroberfläche
-- [ ] Schaffung einer angemessenen Architektur
+- [x] Verbesserungen der Benutzeroberfläche
+- [x] Schaffung einer angemessenen Architektur
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute war ein äusserst produktiver Tag. Zuerst habe ich endlich das Design von Anfang bis Ende umgesetzt, das ich von Anfang an auf der Grundlage eines längst erstellten Mockups wollte – ich habe endlich Tkinter verstanden und weiss nun, wie ich es so verwenden kann, wie ich es brauche. Anschliessend habe ich die Projektstruktur gemäss dem MVC-Modell bearbeitet (jetzt sind `db.py` & `recommender.py` - `model.py`, also model, und `main.py` ist control & view). Am Ende habe ich Kommentare hinzugefügt und den Code ein wenig überarbeitet, damit er schöner aussieht.
 
 ☝️  Vergessen Sie nicht, den Code von heute auf github hochzuladen.
 
